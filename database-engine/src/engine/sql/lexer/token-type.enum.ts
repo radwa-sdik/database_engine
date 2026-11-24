@@ -1,0 +1,28 @@
+
+export enum TokenType{
+    //keywords
+    SELECT = "SELECT", FROM = "FROM", WHERE = "WHERE", ORDER = "ORDER", BY = "BY", ASC = "ASC", DESC = "DESC", LIMIT = "LIMIT",
+    INSERT = "INSERT", INTO = "INTO", VALUES = "VALUES", UPDATE = "UPDATE", SET = "SET", DELETE = "DELETE",
+    CREATE = "CREATE", ALTER = "ALTER", DROP = "DROP", TABLE = "TABLE", ADD = "ADD", COLUMN = "COLUMN", RENAME = "RENAME", TO = "TO", AS = "AS",
+
+    //constraints
+    PRIMARY = "PRIMARY", KEY = "KEY", FOREIGN = "FOREIGN", REFERENCES = "REFERENCES", UNIQUE = "UNIQUE", NOT = "NOT", NULL = "NULL",
+
+    //logical keywords
+    AND = "AND", OR = "OR", IS = "IS", TRUE = "TRUE", FALSE = "FALSE",
+
+    //types
+    INTEGER = "INTEGER", SERIAL = "SERIAL", CHAR = "CHAR", TEXT = "TEXT", BOOLEAN = "BOOLEAN", TIMESTAMP = "TIMESTAMP", DOUBLE = "DOUBLE",
+
+    //Operators
+    EQUAL = "EQUAL", NOT_EQUAL = "NOT_EQUAL", LESS = "LESS", LESS_EQUAL = "LESS_EQUAL", GREATER = "GREATER", GREATER_EQUAL = "GREATER_EQUAL", PLUS = "PLUS", MINUS = "MINUS", STAR = "STAR", SLASH = "SLASH",
+
+    //Punctuation
+    LEFT_PAREN = "LEFT_PAREN", RIGHT_PAREN = "RIGHT_PAREN", COMMA = "COMMA", SEMICOLON = "SEMICOLON",
+
+    //values
+    IDENTIFIER = "IDENTIFIER", STRING = "STRING", NUMBER = "NUMBER",
+
+    //End Of File
+    EOF = "EOF"
+}

@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug NestJS",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "start:debug"],
+            "cwd": "${workspaceFolder}/database-engine",
+            "console": "integratedTerminal",
+            "autoAttachChildProcesses": true,
+            "restart": true,
+            "sourceMaps": true,
+            "outFiles": ["${workspaceFolder}/database-engine/dist/**/*.js"],
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}
